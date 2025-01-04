@@ -16,3 +16,30 @@ const ada_artifact = ada_dep.artifact("ada");
 // Where needed
 <your compilation>.linkLibrary(ada_artifact);
 ```
+
+Finally, in your source code:
+
+```zig
+const std = @import("std");
+const c = @cImport({
+    @cInclude("ada_c.h");
+});
+
+const url_string = "https://user:pass@127.0.0.1:8080/path?query=1#frag";
+const parsed = c.ada_parse(
+    url_string.ptr,
+    url_string.len,
+);
+
+if (!c.ada_is_valid(parsed)) {
+    // Remember to free C-allocated memory!
+    c.ada_free(parsed);
+    return error.InvalidUrl;
+}
+
+// do ada stuff
+const protocol_c = c.ada_get_protocol(parsed);
+const protocol = protocol_c.data[0..protocol_c.length];
+std.debug.print("{s}", .{protocol});
+// https
+```
