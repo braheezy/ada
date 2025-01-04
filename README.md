@@ -43,3 +43,6 @@ const protocol = protocol_c.data[0..protocol_c.length];
 std.debug.print("{s}", .{protocol});
 // https
 ```
+
+## Zig Bindings
+For a light Zig wrapper around all of the Ada functionality, see [ada-zig](https://github.conm/braheezy/ada-zig)/
