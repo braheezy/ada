@@ -14,8 +14,6 @@ pub fn build(b: *std.Build) void {
     lib.addCSourceFile(.{ .file = upstream.path("ada.cpp") });
     lib.linkLibCpp();
 
-    lib.addIncludePath(lib.getEmittedIncludeTree().path(b, "."));
-
     lib.installHeader(upstream.path("ada_c.h"), "ada_c.h");
 
     b.installArtifact(lib);
