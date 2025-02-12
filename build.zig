@@ -11,7 +11,10 @@ pub fn build(b: *std.Build) void {
         .target = target,
         .optimize = optimize,
     });
-    lib.addCSourceFile(.{ .file = upstream.path("ada.cpp") });
+    lib.addCSourceFile(.{
+        .file = upstream.path("ada.cpp"),
+        .flags = &[_][]const u8{"-std=c++20"},
+    });
     lib.linkLibCpp();
 
     lib.installHeader(upstream.path("ada_c.h"), "ada_c.h");
