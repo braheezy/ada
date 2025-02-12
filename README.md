@@ -1,11 +1,13 @@
 # Ada
+
 Zig build of the [Ada URL](https://github.com/ada-url/ada) parsing library.
 
 ## Usage
+
 First, add to your `build.zig.zon`:
 
 ```bash
-zig fetch --save git+https://github.com/braheezy/ada#2.9.2
+zig fetch --save git+https://github.com/braheezy/ada#3.1.0
 ```
 
 Then update your `build.zig`:
@@ -45,4 +47,5 @@ std.debug.print("{s}", .{protocol});
 ```
 
 ## Zig Bindings
+
 For a light Zig wrapper around all of the Ada functionality, see [ada-zig](https://github.conm/braheezy/ada-zig)/
