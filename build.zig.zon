@@ -1,12 +1,13 @@
 .{
-    .name = "ada",
-    .version = "2.9.2",
+    .name = .ada,
+    .version = "3.1.0",
     .dependencies = .{
         .ada = .{
             .url = "https://github.com/ada-url/ada/releases/download/v3.1.0/singleheader.zip",
             .hash = "12207c4cba8a2af4bb18df5516e4d82fc43b7fe07041df21536a0dd9bc773f8c22c6",
         },
     },
+    .fingerprint = 0x8d7087688d585c90,
 
     .paths = .{
         "build.zig",
