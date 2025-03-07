@@ -1,10 +1,10 @@
 .{
     .name = .ada,
-    .version = "3.1.0",
+    .version = "3.1.3",
     .dependencies = .{
         .ada = .{
-            .url = "https://github.com/ada-url/ada/releases/download/v3.1.0/singleheader.zip",
-            .hash = "12207c4cba8a2af4bb18df5516e4d82fc43b7fe07041df21536a0dd9bc773f8c22c6",
+            .url = "https://github.com/ada-url/ada/releases/download/v3.1.3/singleheader.zip",
+            .hash = "12200b99b759ec711b0c9d4becaa54573b7fbe79fc7c08b772d6b6173be25fd0a7b6",
         },
     },
     .fingerprint = 0x8d7087688d585c90,
