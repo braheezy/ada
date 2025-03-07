@@ -4,7 +4,7 @@
     .dependencies = .{
         .ada = .{
             .url = "https://github.com/ada-url/ada/releases/download/v3.1.3/singleheader.zip",
-            .hash = "12200b99b759ec711b0c9d4becaa54573b7fbe79fc7c08b772d6b6173be25fd0a7b6",
+            .hash = "N-V-__8AAIpsFAALmbdZ7HEbDJ1L7KpUVzt_vnn8fAi3cta2",
         },
     },
     .fingerprint = 0x8d7087688d585c90,
