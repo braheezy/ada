@@ -7,7 +7,7 @@ Zig build of the [Ada URL](https://github.com/ada-url/ada) parsing library.
 First, add to your `build.zig.zon`:
 
 ```bash
-zig fetch --save git+https://github.com/braheezy/ada#3.1.3
+zig fetch --save git+https://github.com/braheezy/ada#3.2.1
 ```
 
 Then update your `build.zig`:
