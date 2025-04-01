@@ -48,4 +48,4 @@ std.debug.print("{s}", .{protocol});
 
 ## Zig Bindings
 
-For a light Zig wrapper around all of the Ada functionality, see [ada-zig](https://github.conm/braheezy/ada-zig)/
+For a light Zig wrapper around all of the Ada functionality, see [ada-zig](https://github.conm/braheezy/ada-zig)
