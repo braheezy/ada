@@ -6,14 +6,17 @@ pub fn build(b: *std.Build) void {
 
     const upstream = b.dependency("ada", .{});
 
-    const lib = b.addStaticLibrary(.{
-        .name = "ada",
+    const lib_mod = b.createModule(.{
         .target = target,
         .optimize = optimize,
     });
-    lib.addCSourceFile(.{
+    lib_mod.addCSourceFile(.{
         .file = upstream.path("ada.cpp"),
         .flags = &[_][]const u8{"-std=c++20"},
+    });
+    const lib = b.addLibrary(.{
+        .name = "ada",
+        .root_module = lib_mod,
     });
     lib.linkLibCpp();
 
