@@ -1,7 +1,7 @@
 .{
     .name = .ada,
     .version = "3.4.4",
-    .minimum_zig_versio = "0.16.0",
+    .minimum_zig_version = "0.16.0",
     .dependencies = .{
         .ada = .{
             .url = "https://github.com/ada-url/ada/releases/download/v3.4.4/singleheader.zip",
