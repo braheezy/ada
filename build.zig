@@ -9,6 +9,7 @@ pub fn build(b: *std.Build) void {
     const lib_mod = b.createModule(.{
         .target = target,
         .optimize = optimize,
+        .link_libcpp = true,
     });
     lib_mod.addCSourceFile(.{
         .file = upstream.path("ada.cpp"),
@@ -18,8 +19,6 @@ pub fn build(b: *std.Build) void {
         .name = "ada",
         .root_module = lib_mod,
     });
-    lib.linkLibCpp();
-
     lib.installHeader(upstream.path("ada_c.h"), "ada_c.h");
 
     b.installArtifact(lib);
