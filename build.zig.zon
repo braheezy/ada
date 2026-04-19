@@ -4,7 +4,7 @@
     .minimum_zig_versio = "0.16.0",
     .dependencies = .{
         .ada = .{
-            .url = "https://github.com/ada-url/ada/releases/download/v3.4.0/singleheader.zip",
+            .url = "https://github.com/ada-url/ada/releases/download/v3.4.4/singleheader.zip",
             .hash = "N-V-__8AAIlcFQA2h4Py6896H6D1_5vehJ4JqSiEjVddUvRU",
         },
     },
