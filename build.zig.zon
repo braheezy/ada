@@ -1,11 +1,11 @@
 .{
     .name = .ada,
-    .version = "3.4.4",
+    .version = "4.0.0",
     .minimum_zig_version = "0.16.0",
     .dependencies = .{
         .ada = .{
-            .url = "https://github.com/ada-url/ada/releases/download/v3.4.4/singleheader.zip",
-            .hash = "N-V-__8AAIlcFQA2h4Py6896H6D1_5vehJ4JqSiEjVddUvRU",
+            .url = "https://github.com/ada-url/ada/releases/download/v4.0.0/singleheader.zip",
+            .hash = "N-V-__8AAE2qEQCdZdIUkOLHqlnKMBJ2U17r1avu5QwE6dPh",
         },
     },
     .fingerprint = 0x8d7087688d585c90,
